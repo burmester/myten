@@ -3,12 +3,11 @@
  * Created by IntelliJ IDEA.
  * User: Johan
  * Date: 2013-05-15
- * Time: 20:01
+ * Time: 19:59
  * To change this template use File | Settings | File Templates.
  */
-
 ?>
-<article class="white" id="github">
+<article class="white" id="home">
     <div class="images">
         <div>
             <img src="/images/64x64/facebook.png" alt=""/>

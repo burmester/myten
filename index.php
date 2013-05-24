@@ -33,26 +33,28 @@
 
 <div class="container">
     <div class="background">
-        <div class="khaki row" data-type="background" data-speed="0.85"></div>
+        <div class="aqua row" data-type="background" data-speed="0.85"></div>
         <div class="aqua row" data-type="background" data-speed="1.10"></div>
-        <div class="khaki row" data-type="background" data-speed="0.90"></div>
-        <div class="aqua row" data-type="background" data-speed="1.15"></div>
+        <div class="khaki row" data-type="background" data-speed="0.80"></div>
+        <div class="khaki row" data-type="background" data-speed="1.15"></div>
     </div>
     <div id="window">
         <header>
             <?php include("header.php") ?>
         </header>
         <div class="main" data-type="background" data-speed="1">
-            <?php include("sections/start.php") ?>
-            <?php include("sections/github.php") ?>
-            <?php include("sections/deploy.php") ?>
-            <?php include("sections/wew.php") ?>
+            <?php include("sections/home.php") ?>
             <?php include("sections/rwd.php") ?>
+            <?php include("sections/github.php") ?>
+            <?php include("sections/wew.php") ?>
+            <?php include("sections/deploy.php") ?>
             <?php include("sections/contact.php") ?>
         </div>
         <footer>
             <?php include("footer.php") ?>
         </footer>
+    </div>
+    <div class="forground">
     </div>
 </div>
 

@@ -15,6 +15,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
+    color: #555555;
+    font-family: "Avenir", "Futura", sans-serif;
 }
 
 ol, ul {
@@ -38,61 +40,9 @@ table {
 
 /* #Colummns
 ================================================================================================= */
-.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+#home, #contact, #deploy, #github, #rwd, #wew {
     float: left;
     position: relative;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-/* #Grind 12 Colummns
-================================================================================================= */
-.col1 {
-    width: 6.333%;
-}
-
-.col2 {
-    width: 14.667%;
-}
-
-.col3 {
-    width: 23.0%;
-}
-
-.col4 {
-    width: 31.333%;
-}
-
-.col5 {
-    width: 39.667%;
-}
-
-.col6 {
-    width: 48.5%;
-}
-
-.col7 {
-    width: 56.333%;
-}
-
-.col8 {
-    width: 64.667%;
-}
-
-.col9 {
-    width: 73.0%;
-}
-
-.col10 {
-    width: 81.333%;
-}
-
-.col11 {
-    width: 89.667%;
-}
-
-.col12 {
-    width: 98.0%;
 }
 
 /* #Clear Margin left and right
@@ -138,22 +88,8 @@ a:hover, a:active {
     outline: 0;
 }
 
-/* #Containers
+/* #Color
 ================================================================================================= */
-.container {
-    width: 100%;
-}
-
-.placeholder {
-    height: 400px;
-    margin-bottom: 1%;
-    overflow: hidden;
-}
-
-.placeholder img {
-    vertical-align: middle;
-}
-
 html {
     background: rgba(252, 251, 246, 1);
 }
@@ -218,6 +154,16 @@ a.greyhover:hover {
     box-shadow: inset 0px 5px 0px 0px rgba(144, 144, 144, 0.9);
 }
 
+.purple .images {
+    background: rgba(252, 251, 246, 0.9);
+}
+
+/* #Containers
+================================================================================================= */
+.container {
+    width: 100%;
+}
+
 .row {
     width: 100%;
     height: 200px;
@@ -227,28 +173,109 @@ a.greyhover:hover {
 #window {
     position: absolute;
     display: block;
-    width: 80%;
-    margin: 0 10%;
     top: 0;
+    width: 100%;
 }
 
 header {
-    width: 98%;
-    margin: 0 1% 1%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#home {
+    width: 80%;
+    margin: 0 10%;
+    padding: 2% 0;
+}
+
+#home .images,
+#rwd .images,
+#github .images,
+#wew .images,
+#deploy .images {
+    margin: 20px 20px 10px;
+    float: left;
+}
+
+#home .text,
+#rwd .text,
+#github .text,
+#wew .text,
+#deploy .text {
+    margin-top: 8px;
+    padding: 20px;
+}
+
+#rwd .text {
+    color: rgba(252, 251, 246, 0.9)
+}
+
+#home .images img,
+#rwd .images img,
+#github .images img,
+#wew .images img,
+#deploy .images img {
+    padding: 10px;
+}
+
+#rwd {
+    width: 100%;
+    margin: 0;
+}
+
+#github {
+    width: 80%;
+    margin: 0 10%;
+}
+
+#wew, #deploy {
+    width: 40%;
+    margin: 0;
+}
+
+#wew {
+    margin-left: 10%;
+    -webkit-box-shadow: inset -5px 5px 0px 0px rgba(155, 93, 196, 0.9);
+    box-shadow: inset -5px 5px 0px 0px rgba(155, 93, 196, 0.9);
+
+}
+
+#deploy {
+    margin-right: 10%;
+    -webkit-box-shadow: inset 5px 5px 0px 0px rgba(144, 144, 144, 0.9);
+    box-shadow: inset 5px 5px 0px 0px rgba(144, 144, 144, 0.9);
+}
+
+#contact {
+    width: 80%;
+    margin: 0 10%;
+    border-top: 5px solid rgba(107, 171, 193, 0.9);
+    margin-bottom: 20px;
+}
+
+#contact img {
+    width: 20%;
+    max-width: 150px;
+    min-width: 83px;
+    padding-right: 20px;
+}
+
+#contact .text {
+    padding: 20px;
+}
+
+#contact a {
+    display: block;
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: rgba(107, 171, 193, 0.9);
 }
 
 footer {
     text-align: center;
-    width: 98%;
-    margin: 0 1%;
     line-height: 100px;
     clear: both;
-    margin-bottom: 5%;
-}
-
-footer img {
-    width: 50px;
-    vertical-align: middle;
+    margin-top: 20px;
 }
 
 footer .about {
@@ -261,6 +288,29 @@ footer .about {
     text-decoration: none;
     letter-spacing: 2px;
     text-align: center;
+}
+
+/* Styles
+----------------------------------------------------------------------------------------------------*/
+
+h2 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+p {
+    padding-bottom: 2px;
 }
 
 /* Navigation
@@ -287,7 +337,7 @@ nav ul a {
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 2px;
-    padding: 10px;
+    padding: 30px 10px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -296,7 +346,6 @@ nav ul a {
 #menuButton {
     display: none;
     padding: 10px;
-
     font-family: "Avenir", "Futura", sans-serif;
     font-size: 15px;
     font-weight: 500;
@@ -306,7 +355,33 @@ nav ul a {
     letter-spacing: 2px;
 }
 
-@media (max-width: 540px) {
+@media all and (max-width: 768px) {
+    #wew, #deploy {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    nav ul a {
+        font-size: 13px;
+        padding: 30px 8px;
+    }
+
+    #contact .text, #contact h3, #contact h2 {
+        font-size: 13px;
+    }
+
+    #github {
+        -webkit-box-shadow: inset 5px 0px 0px 0px rgba(144, 144, 144, 0.9);
+        box-shadow: inset 5px 0px 0px 0px rgba(144, 144, 144, 0.9);
+    }
+
+    #contact {
+        -webkit-box-shadow: inset -5px 0px 0px 0px rgba(107, 171, 193, 0.9);
+        box-shadow: inset -5px 0px 0px 0px rgba(107, 171, 193, 0.9);
+    }
+}
+
+@media (max-width: 545px) {
     nav {
         display: block;
     }
@@ -315,67 +390,26 @@ nav ul a {
         display: none;
     }
 
-    nav li {
+    nav ul li {
         display: list-item;
         width: 100%;
         max-width: 480px;
+    }
+
+    nav ul a {
+        font-size: 13px;
+        padding: 8px;
     }
 
     #menuButton {
         display: block;
     }
 
-    #window {
-        width: 99%;
-        margin: 0 0.5%;
+    #home, #deploy, #github, #rwd, #wew, header, #contact, footer {
+        width: auto !important;
+        float: none;
+        margin: 0 1%;
     }
-
-}
-
-@media (min-width: 540px) {
-    nav ul {
-        display: block !important;
-    }
-}
-
-/* Clear
-----------------------------------------------------------------------------------------------------*/
-.clear {
-    clear: both;
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
-
-/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
-.clearfix:after {
-    clear: both;
-    content: ' ';
-    display: block;
-    font-size: 0;
-    line-height: 0;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
-
-.clearfix {
-    display: inline-block;
-}
-
-* html .clearfix {
-    height: 1%;
-}
-
-.clearfix {
-    display: block;
-}
-
-/* General small screen Mobile
-============================================================================================== */
-@media handheld, only screen and (max-width: 767px) {
 
     body {
         font-size: 1.0em;
@@ -386,22 +420,28 @@ nav ul a {
     .container {
         width: 100%;
         min-width: 0;
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
     }
 
-    .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
-        width: auto;
+    #home .images,
+    #rwd .images,
+    #github .images,
+    #wew .images,
+    #deploy .images {
+        margin: 20px 0px 10px;
         float: none;
-        padding-left: 10px;
-        padding-right: 10px;
+        text-align: center;
     }
+}
 
-    .last {
-        margin-right: 1%;
+@media (min-width: 546px) {
+    nav ul {
+        display: block !important;
     }
+}
+
+/* General small screen Mobile
+============================================================================================== */
+@media handheld, only screen and (max-width: 767px) {
 
 }
 
@@ -409,13 +449,6 @@ nav ul a {
 ============================================================================================== */
 @media screen and (max-width: 1024px) {
     /* Add your styles for devices with a maximum width of 1024 */
-}
-
-@media all and (max-width: 768px) {
-    #window {
-        width: 95%;
-        margin: 0 2.5%;
-    }
 }
 
 @media screen and (max-width: 480px) {

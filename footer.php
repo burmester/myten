@@ -1,3 +1,3 @@
 <span class="about">
-    copyright Johan Burmester
+    copyright <span style="font-size: 10px"> &copy; </span>Johan Burmester
 </span>

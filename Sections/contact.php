@@ -8,9 +8,16 @@
  */
 
 ?>
-<div class="col6 placeholder aquaborder last" id="contact">
+<article class="col1 white last" id="contact">
+    <img src="/images/profil.jpg" alt="" align="left"/>
 
-</div>
-<div class="col6 placeholder aquaborder">
+    <div class="text">
+        <h3>Johan Burmester</h3>
 
-</div>
+        <a href="mailto:johan@myten.se">johan@myten.se</a>
+
+        <a href="callto:+46737600610">+46737600610</a>
+
+        <a href="http://www.linkedin.com/pub/johan-burmester/35/8bb/766">Linkedin</a>
+    </div>
+</article>
