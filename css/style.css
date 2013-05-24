@@ -411,6 +411,18 @@ nav ul a {
         margin: 0 1%;
     }
 
+    #rwd {
+        text-align: center;
+    }
+
+    #rwd .images {
+        display: inline-block;
+    }
+
+    #rwd .text {
+        text-align: left;
+    }
+
     body {
         font-size: 1.0em;
         -webkit-text-size-adjust: none;
