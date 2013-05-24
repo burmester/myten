@@ -12,18 +12,18 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
 
     <!-- Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+<!--    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">-->
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/1dot5x.css"
-          media="only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)"/>
-    <link rel="stylesheet" type="text/css" href="css/2x.css"
-          media="only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)"/>
-
+    <!--    <link rel="stylesheet" type="text/css" href="css/1dot5x.css"
+              media="only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)"/>
+        <link rel="stylesheet" type="text/css" href="css/2x.css"
+              media="only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)"/>
+    -->
     <!--[if lt IE 9]>
     <script src="js/html5.js"></script>
     <![endif]-->

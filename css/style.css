@@ -193,7 +193,7 @@ header {
 #github .images,
 #wew .images,
 #deploy .images {
-    margin: 20px 20px 10px;
+    margin: 20px;
     float: left;
 }
 
@@ -207,7 +207,8 @@ header {
 }
 
 #rwd .text {
-    color: rgba(252, 251, 246, 0.9)
+    color: rgba(252, 251, 246, 0.9);
+    margin-top: 0;
 }
 
 #home .images img,
@@ -317,6 +318,7 @@ p {
 ----------------------------------------------------------------------------------------------------*/
 nav {
     display: inline-block;
+    padding-left: 10px;
 }
 
 nav ul {
@@ -381,7 +383,7 @@ nav ul a {
     }
 }
 
-@media (max-width: 545px) {
+@media (max-width: 480px) {
     nav {
         display: block;
     }
@@ -405,10 +407,40 @@ nav ul a {
         display: block;
     }
 
-    #home, #deploy, #github, #rwd, #wew, header, #contact, footer {
+    #home,
+    #deploy,
+    #github,
+    #rwd,
+    #wew,
+    header,
+    #contact,
+    footer {
         width: auto !important;
         float: none;
         margin: 0 1%;
+    }
+
+    #home .images,
+    #rwd .images,
+    #github .images,
+    #wew .images,
+    #deploy .images {
+        padding: 10px 0px 0;;
+        margin: 0;
+        float: none;
+        text-align: center;
+    }
+
+    #home .text,
+    #rwd .text,
+    #github .text,
+    #wew .text,
+    #deploy .text {
+        margin-top: 0;
+    }
+
+    #home {
+        border-top: 5px solid rgba(107, 171, 193, 0.9);
     }
 
     #rwd {
@@ -417,10 +449,13 @@ nav ul a {
 
     #rwd .images {
         display: inline-block;
+        padding: 0;
+        margin-top: 20px;
     }
 
     #rwd .text {
         text-align: left;
+        padding-top: 30px;
     }
 
     body {
@@ -434,18 +469,9 @@ nav ul a {
         min-width: 0;
     }
 
-    #home .images,
-    #rwd .images,
-    #github .images,
-    #wew .images,
-    #deploy .images {
-        margin: 20px 0px 10px;
-        float: none;
-        text-align: center;
-    }
 }
 
-@media (min-width: 546px) {
+@media (min-width: 481px) {
     nav ul {
         display: block !important;
     }
