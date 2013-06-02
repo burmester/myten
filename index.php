@@ -12,10 +12,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
 
     <!-- Icons -->
-<!--    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">-->
+    <!--    <link rel="shortcut icon" href="images/favicon.ico">
+ <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+ <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+ <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">-->
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
@@ -34,8 +34,8 @@
 <div class="container">
     <div class="background">
         <div class="aqua row" data-type="background" data-speed="0.85"></div>
-        <div class="aqua row" data-type="background" data-speed="1.10"></div>
-        <div class="khaki row" data-type="background" data-speed="0.80"></div>
+        <div class=" khaki row" data-type="background" data-speed="1.10"></div>
+        <div class=" aqua row" data-type="background" data-speed="0.80"></div>
         <div class="khaki row" data-type="background" data-speed="1.15"></div>
     </div>
     <div id="window">
@@ -69,6 +69,12 @@
 
         window.onresize = function (event) {
             $('.row').css('height', $(window).height() / 4 + 'px');
+            if ($('#wew').innerHeight() < $('#deploy').innerHeight()) {
+                $('#wew').style.height = $('#deploy').innerHeight();
+            } else {
+                $('#deploy').style.height = $('#wew').innerHeight();
+            }
+
         }
 
         $(window).scroll(function () {

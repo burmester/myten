@@ -19,16 +19,44 @@
         </div>
     </div>
     <div class="text">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>This sandbox belongs to Johan Burmester and you are very much welcome to have a look around.</h2>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum placerat justo, vel ornare mauris
-            vehicula vel. Ut ultrices risus ipsum, pharetra rutrum orci. Donec nec nunc ante. Aenean viverra, metus eget
-            porta tempus, justo arcu feugiat orci, eget sagittis lacus purus non sem. Sed venenatis congue urna eget
-            aliquam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
-            sollicitudin ultricies blandit. Vestibulum quis quam eget ligula fermentum consequat. Aliquam eget ante
-            metus, sit amet sollicitudin justo. Praesent sagittis risus nec magna congue pharetra. Aenean accumsan
-            vestibulum augue tempor elementum. Curabitur eget tortor nibh. Quisque consequat viverra eleifend.
+            The purpose of this site is to try out new technology, here is were I try to keep up with the development of
+            new design choices, popular color pallets, cool javascript snipppets, development tools and much more.
+            So far this is my forth more ambitious "mini-project" - in current time.
         </p>
+        <br/>
+
+        <p>
+            The first project was created back in aug. '11 and the goal was to learn Responsive Web Design, an back then
+            upcoming technology, also i want to try out HTML5 and CSS3.
+            The goal behind the second project was to dive deeper into CSS3 - mainly gradients and transforms matrix -
+            but I later learn it was only Chorme had the capabilities to render my site.
+            The Third involved more Javascript, Ajax, Json and external API such a GoogleMaps, Google Docs,Facebook API
+            and Twitter API, this was in the spring of '12. Also at this time I have graduated and started working as a
+            Front-end web developer, rapid learn more about develop to mainly to other devices then desktop.
+        </p>
+
+        <div class="submenu">
+            <ul>
+                <li><a href="/old/johanburmester/index.htm" class="aquahover">first</a></li><li>
+                <a href="/old/johanburmester/spotlight/index.php" class="purplehover">second</a></li><li>
+                <a href="/old/exol/index.php" class="greyhover">third</a></li><li>
+            </ul>
+        </div>
+
+        <p>
+            This is my latest project, I mainly wanted to do a replacement for my first project, it had become a rather
+            old design and I had to close parts of it down. The focus of this site is the design choice "One Site and
+            use anchors", also I wanted to use "parallax scrolling" and the pallet of 2013.
+        </p>
+        <br/>
+
+        <p>
+            And as a bounus I wanted to tell you about some great tools for developers. Some are old, other are new
+            and upcoming, hopefully you will find some part of it interesting.
+        </p>
+
     </div>
 </article>

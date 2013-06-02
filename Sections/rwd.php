@@ -9,15 +9,10 @@
 ?>
 <article class="purple" id="rwd">
     <div class="images">
-        <div>
-            <img src="/images/64x64/facebook.png" alt=""/><img src="/images/64x64/twitter.png" alt=""/>
-        </div><div>
-            <img src="/images/64x64/rss.png" alt=""/><img src="/images/64x64/youtube.png" alt=""/>
-        </div>
+        <img src="/images/rwd.png" alt="" style=""/>
     </div>
     <div class="text">
-        <h2>Lorem ipsum dolor sit amet</h2>
-
+        <h2>Responsive Web Design - Mobile first</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum placerat justo, vel ornare mauris
             vehicula vel. Ut ultrices risus ipsum, pharetra rutrum orci. Donec nec nunc ante. Aenean viverra, metus eget

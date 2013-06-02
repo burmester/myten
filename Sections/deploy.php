@@ -10,23 +10,17 @@
 ?>
 <article class="white" id="deploy">
     <div class="images">
-        <div>
-            <img src="/images/64x64/facebook.png" alt=""/>
-            <img src="/images/64x64/twitter.png" alt=""/>
-        </div>
-        <div>
-            <img src="/images/64x64/rss.png" alt=""/>
-            <img src="/images/64x64/youtube.png" alt=""/>
-        </div>
+        <img src="/images/deploy.png" alt="" style=""/>
     </div>
     <div class="text">
-        <h2>Lorem ipsum dolor sit amet</h2>
-
+        <h2>"Deploy is an
+            easy to use & fast code deployment platform."</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum placerat justo, vel ornare mauris
             vehicula vel. Ut ultrices risus ipsum, pharetra rutrum orci. Donec nec nunc ante. Aenean viverra, metus eget
             porta tempus, justo arcu feugiat orci, eget sagittis lacus purus non sem. Sed venenatis congue urna eget
-            aliquam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            aliquam.
         </p>
+        <a href="http://deployhq.com/">http://deployhq.com</a>
     </div>
 </article>

@@ -10,17 +10,10 @@
 ?>
 <article class="white" id="github">
     <div class="images">
-        <div>
-            <img src="/images/64x64/facebook.png" alt=""/>
-            <img src="/images/64x64/twitter.png" alt=""/>
-        </div>
-        <div>
-            <img src="/images/64x64/rss.png" alt=""/>
-            <img src="/images/64x64/youtube.png" alt=""/>
-        </div>
+        <img src="/images/git.png" alt="" style=""/>
     </div>
     <div class="text">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>"Build software better, together."</h2>
 
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum placerat justo, vel ornare mauris
@@ -31,5 +24,10 @@
             metus, sit amet sollicitudin justo. Praesent sagittis risus nec magna congue pharetra. Aenean accumsan
             vestibulum augue tempor elementum. Curabitur eget tortor nibh. Quisque consequat viverra eleifend.
         </p>
+        <a href="https://github.com/">http://github.com</a>
+        <br/>
+        <p>You could also visit me at github and see how my projects are going</p>
+        <a href="https://github.com/burmester">http://github.com/burmester</a>
+
     </div>
 </article>

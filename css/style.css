@@ -38,13 +38,6 @@ table {
     border-spacing: 0;
 }
 
-/* #Colummns
-================================================================================================= */
-#home, #contact, #deploy, #github, #rwd, #wew {
-    float: left;
-    position: relative;
-}
-
 /* #Clear Margin left and right
 ================================================================================================= */
 .first {
@@ -86,6 +79,36 @@ img {
 ============================================================================================== */
 a:hover, a:active {
     outline: 0;
+}
+
+/* Styles
+----------------------------------------------------------------------------------------------------*/
+
+h2 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+p {
+    padding-bottom: 2px;
+    line-height: 22px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: rgba(107, 171, 193, 0.9);
 }
 
 /* #Color
@@ -170,6 +193,12 @@ a.greyhover:hover {
     position: relative;
 }
 
+#home, #contact, #deploy, #github, #rwd, #wew {
+    float: left;
+    position: relative;
+    padding: 15px 0 30px;
+}
+
 #window {
     position: absolute;
     display: block;
@@ -186,6 +215,7 @@ header {
     width: 80%;
     margin: 0 10%;
     padding: 2% 0;
+    padding-bottom: 0;
 }
 
 #home .images,
@@ -219,6 +249,16 @@ header {
     padding: 10px;
 }
 
+#rwd .images img {
+    height: 150px;
+}
+
+#github .images img,
+#wew .images img,
+#deploy .images img {
+    width: 200px;
+}
+
 #rwd {
     width: 100%;
     margin: 0;
@@ -229,7 +269,8 @@ header {
     margin: 0 10%;
 }
 
-#wew, #deploy {
+#wew,
+#deploy {
     width: 40%;
     margin: 0;
 }
@@ -252,6 +293,7 @@ header {
     margin: 0 10%;
     border-top: 5px solid rgba(107, 171, 193, 0.9);
     margin-bottom: 20px;
+    padding: 0;
 }
 
 #contact img {
@@ -266,10 +308,7 @@ header {
 }
 
 #contact a {
-    display: block;
-    margin-bottom: 6px;
-    text-decoration: none;
-    color: rgba(107, 171, 193, 0.9);
+    margin-bottom: 10px;
 }
 
 footer {
@@ -291,29 +330,6 @@ footer .about {
     text-align: center;
 }
 
-/* Styles
-----------------------------------------------------------------------------------------------------*/
-
-h2 {
-    font-size: 24px;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-}
-
-h3 {
-    font-size: 20px;
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-}
-
-p {
-    padding-bottom: 2px;
-}
-
 /* Navigation
 ----------------------------------------------------------------------------------------------------*/
 nav {
@@ -321,18 +337,30 @@ nav {
     padding-left: 10px;
 }
 
-nav ul {
+.submenu {
+    text-align: center;
+    background: rgba(215, 215, 215, 0.59);
+}
+
+.text > .submenu {
+    margin: 10px -20px;
+}
+
+nav ul,
+.submenu ul {
     list-style: none;
     width: 100%;
 }
 
-nav li {
+nav li,
+.submenu li {
     display: inline-block;
     max-width: 128px;
     text-align: center;
 }
 
-nav ul a {
+nav ul a,
+.submenu ul a {
     color: #555555;
     display: block;
     font-family: "Avenir", "Futura", sans-serif;
@@ -343,6 +371,10 @@ nav ul a {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.submenu ul a {
+    padding: 10px;
 }
 
 #menuButton {
@@ -357,19 +389,24 @@ nav ul a {
     letter-spacing: 2px;
 }
 
+/* Custom sizes
+============================================================================================== */
+
+@media screen and (max-width: 1024px) {
+    #wew .images,
+    #deploy .images {
+        float: none;
+        text-align: center;
+        margin: 20px;
+    }
+
+}
+
 @media all and (max-width: 768px) {
-    #wew, #deploy {
+    #wew,
+    #deploy {
         width: 80%;
         margin: 0 10%;
-    }
-
-    nav ul a {
-        font-size: 13px;
-        padding: 30px 8px;
-    }
-
-    #contact .text, #contact h3, #contact h2 {
-        font-size: 13px;
     }
 
     #github {
@@ -381,26 +418,42 @@ nav ul a {
         -webkit-box-shadow: inset -5px 0px 0px 0px rgba(107, 171, 193, 0.9);
         box-shadow: inset -5px 0px 0px 0px rgba(107, 171, 193, 0.9);
     }
-}
 
-@media (max-width: 480px) {
-    nav {
-        display: block;
+    #contact .text,
+    #contact h3,
+    #contact h2 {
+        font-size: 13px;
     }
 
-    nav ul {
-        display: none;
+    #wew .images,
+    #deploy .images {
+        float: left;
+        text-align: left;
+        margin: 20px;
     }
 
-    nav ul li {
-        display: list-item;
-        width: 100%;
-        max-width: 480px;
+    #rwd .images img {
+        height: auto;
+        width: 200px;
     }
 
     nav ul a {
         font-size: 13px;
-        padding: 8px;
+        padding: 30px 8px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1.0em;
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+    }
+
+    .container {
+        width: 100%;
+        min-width: 0;
     }
 
     #menuButton {
@@ -458,15 +511,23 @@ nav ul a {
         padding-top: 30px;
     }
 
-    body {
-        font-size: 1.0em;
-        -webkit-text-size-adjust: none;
-        -ms-text-size-adjust: none;
+    nav {
+        display: block;
     }
 
-    .container {
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        display: list-item;
         width: 100%;
-        min-width: 0;
+        max-width: 480px;
+    }
+
+    nav ul a {
+        font-size: 13px;
+        padding: 8px;
     }
 
 }
@@ -477,14 +538,6 @@ nav ul a {
     }
 }
 
-/* General small screen Mobile
-============================================================================================== */
-@media handheld, only screen and (max-width: 767px) {
-
-}
-
-/* Custom sizes
-============================================================================================== */
 @media screen and (max-width: 1024px) {
     /* Add your styles for devices with a maximum width of 1024 */
 }

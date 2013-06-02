@@ -9,17 +9,10 @@
 ?>
 <article class="white" id="wew">
     <div class="images">
-        <div>
-            <img src="/images/64x64/facebook.png" alt=""/>
-            <img src="/images/64x64/twitter.png" alt=""/>
-        </div>
-        <div>
-            <img src="/images/64x64/rss.png" alt=""/>
-            <img src="/images/64x64/youtube.png" alt=""/>
-        </div>
+        <img src="/images/wew.svg" alt="" style=""/>
     </div>
     <div class="text">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>"Give your site a mobile boost!"</h2>
 
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum placerat justo, vel ornare mauris
@@ -27,5 +20,6 @@
             porta tempus, justo arcu feugiat orci, eget sagittis lacus purus non sem. Sed venenatis congue urna eget
             aliquam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
         </p>
+        <a href="http://whateverweb.com/">http://whateverweb.com/</a>
     </div>
 </article>
