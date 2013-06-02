@@ -28,6 +28,7 @@ local.properties
 # PDT-specific
 .buildpath
 
+<<<<<<< HEAD
 #################
 ## IntelliJ
 #################
@@ -37,6 +38,8 @@ local.properties
 *.iws
 .idea/
 
+=======
+>>>>>>> origin/alpha
 
 #################
 ## Visual Studio
@@ -51,6 +54,7 @@ local.properties
 *.sln.docstates
 
 # Build results
+<<<<<<< HEAD
 
 [Dd]ebug/
 [Rr]elease/
@@ -63,6 +67,10 @@ build/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
+=======
+[Dd]ebug/
+[Rr]elease/
+>>>>>>> origin/alpha
 *_i.c
 *_p.c
 *.ilk
@@ -78,6 +86,7 @@ build/
 *.tli
 *.tlh
 *.tmp
+<<<<<<< HEAD
 *.tmp_proj
 *.log
 *.vspscc
@@ -86,6 +95,14 @@ build/
 *.pidb
 *.log
 *.scc
+=======
+*.vspscc
+.builds
+*.dotCover
+
+## TODO: If you have NuGet Package Restore enabled, uncomment this
+#packages/
+>>>>>>> origin/alpha
 
 # Visual C++ cache files
 ipch/
@@ -93,11 +110,15 @@ ipch/
 *.ncb
 *.opensdf
 *.sdf
+<<<<<<< HEAD
 *.cachefile
+=======
+>>>>>>> origin/alpha
 
 # Visual Studio profiler
 *.psess
 *.vsp
+<<<<<<< HEAD
 *.vspx
 
 # Guidance Automation Toolkit
@@ -119,6 +140,14 @@ _TeamCity*
 
 # Installshield output folder
 [Ee]xpress/
+=======
+
+# ReSharper is a .NET coding add-in
+_ReSharper*
+
+# Installshield output folder
+[Ee]xpress
+>>>>>>> origin/alpha
 
 # DocProject is a documentation generator add-in
 DocProject/buildhelp/
@@ -131,6 +160,7 @@ DocProject/Help/Html2
 DocProject/Help/html
 
 # Click-Once directory
+<<<<<<< HEAD
 publish/
 
 # Publish Web Output
@@ -162,12 +192,28 @@ ClientBin/
 
 # RIA/Silverlight projects
 Generated_Code/
+=======
+publish
+
+# Others
+[Bb]in
+[Oo]bj
+sql
+TestResults
+*.Cache
+ClientBin
+stylecop.*
+~$*
+*.dbmdl
+Generated_Code #added for RIA/Silverlight projects
+>>>>>>> origin/alpha
 
 # Backup & report files from converting an old project file to a newer
 # Visual Studio version. Backup files are not needed, because we have git ;-)
 _UpgradeReport_Files/
 Backup*/
 UpgradeLog*.XML
+<<<<<<< HEAD
 UpgradeLog*.htm
 
 # SQL Server files
@@ -181,16 +227,30 @@ App_Data/*.ldf
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
+=======
+
+
+
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+>>>>>>> origin/alpha
 
 # Folder config file
 Desktop.ini
 
+<<<<<<< HEAD
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
 # Mac crap
 .DS_Store
 
+=======
+>>>>>>> origin/alpha
 
 #############
 ## Python
@@ -201,6 +261,7 @@ $RECYCLE.BIN/
 # Packages
 *.egg
 *.egg-info
+<<<<<<< HEAD
 dist/
 build/
 eggs/
@@ -208,6 +269,16 @@ parts/
 var/
 sdist/
 develop-eggs/
+=======
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+>>>>>>> origin/alpha
 .installed.cfg
 
 # Installer logs
@@ -222,3 +293,17 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+<<<<<<< HEAD
+=======
+
+# Mac crap
+.DS_Store
+
+#Sublime
+*.sublime-project
+*.sublime-workspace
+
+#IntelliJ
+*.iml
+.idea
+>>>>>>> origin/alpha

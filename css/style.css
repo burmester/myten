@@ -1,0 +1,561 @@
+/* #Reset
+================================================================================================= */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    color: #555555;
+    font-family: "Avenir", "Futura", sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* #Clear Margin left and right
+================================================================================================= */
+.first {
+    margin-left: 0;
+}
+
+.last {
+    margin-right: 0;
+}
+
+/* Media - Fluid Images - Video
+============================================================================================== */
+figure {
+    margin: 0
+}
+
+img, object, embed, video {
+    max-width: 100%;
+    _width: 100%;
+}
+
+/* Fluid images */
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+/* Improve IE's resizing of images */
+svg:not(:root) {
+    overflow: hidden
+}
+
+/* Correct IE9 overflow */
+img {
+    height: auto;
+}
+
+/* Links (No outline borders)
+============================================================================================== */
+a:hover, a:active {
+    outline: 0;
+}
+
+/* Styles
+----------------------------------------------------------------------------------------------------*/
+
+h2 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+p {
+    padding-bottom: 2px;
+    line-height: 22px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: rgba(107, 171, 193, 0.9);
+}
+
+/* #Color
+================================================================================================= */
+html {
+    background: rgba(252, 251, 246, 1);
+}
+
+.white,
+.placeholder,
+header,
+footer {
+    background: rgba(256, 256, 256, 0.9);
+}
+
+.khaki {
+    background: rgba(190, 152, 115, 0.9);
+}
+
+.aqua {
+    background: rgba(107, 171, 193, 0.9);
+}
+
+.purple {
+    background: rgba(155, 93, 196, 0.9);
+}
+
+.grey {
+    background: rgba(144, 144, 144, 0.9);
+}
+
+.black {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.purpleborder {
+    -webkit-box-shadow: inset 0px 0px 0px 5px rgba(155, 93, 196, 0.9);
+    box-shadow: inset 0px 0px 0px 5px rgba(155, 93, 196, 0.9);
+}
+
+.aquaborder {
+    -webkit-box-shadow: inset 0px 0px 0px 5px rgba(107, 171, 193, 0.9);
+    box-shadow: inset 0px 0px 0px 5px rgba(107, 171, 193, 0.9);
+}
+
+.greyborder {
+    -webkit-box-shadow: inset 0px 0px 0px 5px rgba(144, 144, 144, 0.9);
+    box-shadow: inset 0px 0px 0px 5px rgba(144, 144, 144, 0.9);
+}
+
+a.purplehover:hover {
+    color: rgba(155, 93, 196, 0.9);
+    -webkit-box-shadow: inset 0px 5px 0px 0px rgba(155, 93, 196, 0.9);
+    box-shadow: inset 0px 5px 0px 0px rgba(155, 93, 196, 0.9);
+}
+
+a.aquahover:hover {
+    color: rgba(107, 171, 193, 0.9);
+    -webkit-box-shadow: inset 0px 5px 0px 0px rgba(107, 171, 193, 0.9);
+    box-shadow: inset 0px 5px 0px 0px rgba(107, 171, 193, 0.9);
+}
+
+a.greyhover:hover {
+    color: rgba(144, 144, 144, 0.9);
+    -webkit-box-shadow: inset 0px 5px 0px 0px rgba(144, 144, 144, 0.9);
+    box-shadow: inset 0px 5px 0px 0px rgba(144, 144, 144, 0.9);
+}
+
+.purple .images {
+    background: rgba(252, 251, 246, 0.9);
+}
+
+/* #Containers
+================================================================================================= */
+.container {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+#home, #contact, #deploy, #github, #rwd, #wew {
+    float: left;
+    position: relative;
+    padding: 15px 0 30px;
+}
+
+#window {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#home {
+    width: 80%;
+    margin: 0 10%;
+    padding: 2% 0;
+    padding-bottom: 0;
+}
+
+#home .images,
+#rwd .images,
+#github .images,
+#wew .images,
+#deploy .images {
+    margin: 20px;
+    float: left;
+}
+
+#home .text,
+#rwd .text,
+#github .text,
+#wew .text,
+#deploy .text {
+    margin-top: 8px;
+    padding: 20px;
+}
+
+#rwd .text {
+    color: rgba(252, 251, 246, 0.9);
+    margin-top: 0;
+}
+
+#home .images img,
+#rwd .images img,
+#github .images img,
+#wew .images img,
+#deploy .images img {
+    padding: 10px;
+}
+
+#rwd .images img {
+    height: 150px;
+}
+
+#github .images img,
+#wew .images img,
+#deploy .images img {
+    width: 200px;
+}
+
+#rwd {
+    width: 100%;
+    margin: 0;
+}
+
+#github {
+    width: 80%;
+    margin: 0 10%;
+}
+
+#wew,
+#deploy {
+    width: 40%;
+    margin: 0;
+}
+
+#wew {
+    margin-left: 10%;
+    -webkit-box-shadow: inset -5px 5px 0px 0px rgba(155, 93, 196, 0.9);
+    box-shadow: inset -5px 5px 0px 0px rgba(155, 93, 196, 0.9);
+
+}
+
+#deploy {
+    margin-right: 10%;
+    -webkit-box-shadow: inset 5px 5px 0px 0px rgba(144, 144, 144, 0.9);
+    box-shadow: inset 5px 5px 0px 0px rgba(144, 144, 144, 0.9);
+}
+
+#contact {
+    width: 80%;
+    margin: 0 10%;
+    border-top: 5px solid rgba(107, 171, 193, 0.9);
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+#contact img {
+    width: 20%;
+    max-width: 150px;
+    min-width: 83px;
+    padding-right: 20px;
+}
+
+#contact .text {
+    padding: 20px;
+}
+
+#contact a {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    line-height: 100px;
+    clear: both;
+    margin-top: 20px;
+}
+
+footer .about {
+    margin: 0 1%;
+    font-family: "Avenir", "Futura", sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    color: #555555;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Navigation
+----------------------------------------------------------------------------------------------------*/
+nav {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.submenu {
+    text-align: center;
+    background: rgba(215, 215, 215, 0.59);
+}
+
+.text > .submenu {
+    margin: 10px -20px;
+}
+
+nav ul,
+.submenu ul {
+    list-style: none;
+    width: 100%;
+}
+
+nav li,
+.submenu li {
+    display: inline-block;
+    max-width: 128px;
+    text-align: center;
+}
+
+nav ul a,
+.submenu ul a {
+    color: #555555;
+    display: block;
+    font-family: "Avenir", "Futura", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 30px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.submenu ul a {
+    padding: 10px;
+}
+
+#menuButton {
+    display: none;
+    padding: 10px;
+    font-family: "Avenir", "Futura", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #555555;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+/* Custom sizes
+============================================================================================== */
+
+@media screen and (max-width: 1024px) {
+    #wew .images,
+    #deploy .images {
+        float: none;
+        text-align: center;
+        margin: 20px;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+    #wew,
+    #deploy {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    #github {
+        -webkit-box-shadow: inset 5px 0px 0px 0px rgba(144, 144, 144, 0.9);
+        box-shadow: inset 5px 0px 0px 0px rgba(144, 144, 144, 0.9);
+    }
+
+    #contact {
+        -webkit-box-shadow: inset -5px 0px 0px 0px rgba(107, 171, 193, 0.9);
+        box-shadow: inset -5px 0px 0px 0px rgba(107, 171, 193, 0.9);
+    }
+
+    #contact .text,
+    #contact h3,
+    #contact h2 {
+        font-size: 13px;
+    }
+
+    #wew .images,
+    #deploy .images {
+        float: left;
+        text-align: left;
+        margin: 20px;
+    }
+
+    #rwd .images img {
+        height: auto;
+        width: 200px;
+    }
+
+    nav ul a {
+        font-size: 13px;
+        padding: 30px 8px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1.0em;
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+    }
+
+    .container {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #menuButton {
+        display: block;
+    }
+
+    #home,
+    #deploy,
+    #github,
+    #rwd,
+    #wew,
+    header,
+    #contact,
+    footer {
+        width: auto !important;
+        float: none;
+        margin: 0 1%;
+    }
+
+    #home .images,
+    #rwd .images,
+    #github .images,
+    #wew .images,
+    #deploy .images {
+        padding: 10px 0px 0;;
+        margin: 0;
+        float: none;
+        text-align: center;
+    }
+
+    #home .text,
+    #rwd .text,
+    #github .text,
+    #wew .text,
+    #deploy .text {
+        margin-top: 0;
+    }
+
+    #home {
+        border-top: 5px solid rgba(107, 171, 193, 0.9);
+    }
+
+    #rwd {
+        text-align: center;
+    }
+
+    #rwd .images {
+        display: inline-block;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    #rwd .text {
+        text-align: left;
+        padding-top: 30px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        display: list-item;
+        width: 100%;
+        max-width: 480px;
+    }
+
+    nav ul a {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+}
+
+@media (min-width: 481px) {
+    nav ul {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Add your styles for devices with a maximum width of 1024 */
+}
+
+@media screen and (max-width: 480px) {
+    /* Add your styles for devices with a maximum width of 480 */
+}
+
+@media screen and (max-width: 320px) {
+    /* Add your styles for devices with a maximum width of 320 */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Add your styles for devices with a maximum width of 1024 */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Add your styles for devices with a maximum width of 768 */
+}
