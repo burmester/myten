@@ -1,0 +1,6 @@
+[submodule "johanburmester"]
+	path = johanburmester
+	url = git@github.com:burmester/johanburmester.git
+[submodule "exol"]
+	path = exol
+	url = git@github.com:burmester/exol.git
