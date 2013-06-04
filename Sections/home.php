@@ -40,9 +40,9 @@
 
         <div class="submenu">
             <ul>
-                <li><a href="/old/johanburmester/index.htm" class="aquahover">first</a></li><li>
-                <a href="/old/johanburmester/spotlight/index.php" class="purplehover">second</a></li><li>
-                <a href="/old/exol/index.php" class="greyhover">third</a></li><li>
+                <li><a href="/johanburmester/index.htm" class="aquahover">first</a></li><li>
+                <a href="/johanburmester/spotlight/index.php" class="purplehover">second</a></li><li>
+                <a href="/exol/index.php" class="greyhover">third</a></li><li>
             </ul>
         </div>
 
