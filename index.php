@@ -69,12 +69,6 @@
 
         window.onresize = function (event) {
             $('.row').css('height', $(window).height() / 4 + 'px');
-            if ($('#wew').innerHeight() < $('#deploy').innerHeight()) {
-                $('#wew').style.height = $('#deploy').innerHeight();
-            } else {
-                $('#deploy').style.height = $('#wew').innerHeight();
-            }
-
         }
 
         $(window).scroll(function () {

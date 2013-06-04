@@ -48,13 +48,13 @@
 
         <p>
             This is my latest project, I mainly wanted to do a replacement for my first project, it had become a rather
-            old design and I had to close parts of it down. The focus of this site is the design choice "One Site and
-            use anchors", also I wanted to use "parallax scrolling" and the pallet of 2013.
+            old design and I had to close parts of it down. The focus of this site is the design choice "single page",
+            also I wanted to use "parallax scrolling" and the pallet of 2013.
         </p>
         <br/>
 
         <p>
-            And as a bounus I wanted to tell you about some great tools for developers. Some are old, other are new
+            And as a bonus I wanted to tell you about some great tools for developers. Some are old, other are new
             and upcoming, hopefully you will find some part of it interesting.
         </p>
 

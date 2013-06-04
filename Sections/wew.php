@@ -15,10 +15,11 @@
         <h2>"Give your site a mobile boost!"</h2>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum placerat justo, vel ornare mauris
-            vehicula vel. Ut ultrices risus ipsum, pharetra rutrum orci. Donec nec nunc ante. Aenean viverra, metus eget
-            porta tempus, justo arcu feugiat orci, eget sagittis lacus purus non sem. Sed venenatis congue urna eget
-            aliquam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            WhatEverWeb or wew, is the server side tools you would need to make you site RESS. It include a image
+            scaling, device detection, css and javascript compression. It's quite a nifty tool, you do a API-request
+            getting the devices capabilities and render the elements needed, no more, no less. It would take care of the
+            images scaling, just tell it to make this image 100% of the device width and your done. It also handles RWD
+            sites break points allowing you to optimize perfectly.
         </p>
         <a href="http://whateverweb.com/">http://whateverweb.com/</a>
     </div>
