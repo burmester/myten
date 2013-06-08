@@ -18,7 +18,15 @@
  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">-->
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
+
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <link href="/css/print.css" media="print" rel="stylesheet" type="text/css"/>
+    <!--[if IE]>
+    <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css"/>
+
     <!--    <link rel="stylesheet" type="text/css" href="css/1dot5x.css"
               media="only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)"/>
         <link rel="stylesheet" type="text/css" href="css/2x.css"
@@ -30,12 +38,11 @@
 </head>
 <body>
 
-
 <div class="container">
     <div class="background">
-        <div class="aqua row" data-type="background" data-speed="0.85"></div>
+        <div class="cyan row" data-type="background" data-speed="0.85"></div>
         <div class=" khaki row" data-type="background" data-speed="1.10"></div>
-        <div class=" aqua row" data-type="background" data-speed="0.80"></div>
+        <div class=" cyan row" data-type="background" data-speed="0.80"></div>
         <div class="khaki row" data-type="background" data-speed="1.15"></div>
     </div>
     <div id="window">
@@ -43,12 +50,13 @@
             <?php include("header.php") ?>
         </header>
         <div class="main" data-type="background" data-speed="1">
-            <?php include("sections/home.php") ?>
-            <?php include("sections/rwd.php") ?>
-            <?php include("sections/github.php") ?>
-            <?php include("sections/wew.php") ?>
-            <?php include("sections/deploy.php") ?>
-            <?php include("sections/contact.php") ?>
+            <?php include("article/home.php") ?>
+            <?php include("article/rwd.php") ?>
+            <?php include("article/github.php") ?>
+            <?php include("article/wew.php") ?>
+            <?php include("article/deploy.php") ?>
+            <?php include("article/sass.php") ?>
+            <?php include("article/contact.php") ?>
         </div>
         <footer>
             <?php include("footer.php") ?>
@@ -73,13 +81,8 @@
 
         $(window).scroll(function () {
             var scrollHeight = $(window).scrollTop();
-
             var test = scrollHeight + $(window).outerHeight();
-
             var boolean = $('#window').height() > test;
-
-//            $('header').text($('#window').height() + ' > ' + test + ' boolean: ' + boolean);
-
             if (boolean) {
                 $('div[data-type="background"]').each(function () {
                     var multiplier = $(this).data('speed');

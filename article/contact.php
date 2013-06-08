@@ -8,7 +8,7 @@
  */
 
 ?>
-<article class="col1 white last" id="contact">
+<section class="col1 white last" id="contact">
     <img src="/images/profil.jpg" alt="" align="left"/>
 
     <div class="text">
@@ -20,4 +20,4 @@
 
         <a href="http://www.linkedin.com/pub/johan-burmester/35/8bb/766">Linkedin</a>
     </div>
-</article>
+</section>

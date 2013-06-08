@@ -1,0 +1,395 @@
+@import "base";
+
+/* Sprite
+----------------------------------------------------------------------------------------------------*/
+
+@import "icon/*.png";
+@include all-icon-sprites;
+
+.sprite64 span {
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+}
+
+/* Styles
+----------------------------------------------------------------------------------------------------*/
+
+h2 {
+    @include text-style;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    @include text-style;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: $cyan;
+}
+
+p {
+    padding-bottom: 2px;
+    line-height: 22px;
+    a {
+        display: inline;
+    }
+}
+
+/* #Color
+================================================================================================= */
+
+html {
+    background: $offwhite;
+}
+
+.white,
+.placeholder,
+header,
+footer {
+    background: $white;
+}
+
+.grey {
+    background: $grey;
+}
+
+.black {
+    background: $black;
+}
+
+//$colors: (khaki $khaki) (cyan $cyan) (purple $purple);
+$colors: (khaki $khaki)
+(
+cyan
+
+$cyan)
+(
+purple
+
+$purple)
+;
+
+    @each $color in $colors {
+        .#{nth($color,1)}{
+            background: #{nth($color,2)};
+        }
+        .#{nth($color,1)}border {
+            @include single-box-shadow(#{nth($color,2)}, 0px, 0px, 0px, 5px, inset)
+        }
+        a.#{nth($color,1)}hover:hover {
+            color: #{nth($color,2)};
+            @include single-box-shadow(#{nth($color,2)}, 0px, 5px, 0px, 0px, inset)
+        }
+    }
+
+.purple {
+    .images {
+        background: $offwhite;
+    }
+}
+
+/* #Containers
+================================================================================================= */
+.row {
+    height: 200px;
+    position: relative;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+#window {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+#home, #contact, #deploy, #github, #sass, #rwd, #wew {
+    float: left;
+    position: relative;
+    padding: 10px 0;
+    .images {
+        margin: 20px;
+        float: left;
+        img {
+            padding: 10px;
+        }
+    }
+    .text {
+        margin-top: 8px;
+        padding: 20px;
+    }
+}
+
+#deploy, #github, #sass, #wew {
+    .images img {
+        width: 200px;
+    }
+}
+
+#github, #sass, #home {
+    width: $max-width;
+    margin: 0 10%;
+}
+
+#deploy, #wew {
+    width: $max-width / 2;
+    margin: 0;
+}
+
+#sass {
+    @include single-box-shadow($cyan, 0px, 5px, 0px, 0px, inset)
+}
+
+#wew {
+    margin-left: 10%;
+    @include single-box-shadow($purple, -5px, 5px, 0px, 0px, inset)
+}
+
+#deploy {
+    margin-right: 10%;
+    @include single-box-shadow($grey, 5px, 5px, 0px, 0px, inset)
+}
+
+#rwd {
+    margin: 0;
+    .text {
+        color: $offwhite;
+        margin-top: 0;
+    }
+    .images img {
+        height: 150px;
+    }
+}
+
+#contact {
+    width: $max-width;
+    margin: 0 $max-width/8;
+    border-top: 5px solid $grey;
+    margin-bottom: 20px;
+    padding: 0;
+    img {
+        width: $max-width / 4;
+        max-width: 150px;
+        min-width: 83px;
+        padding-right: 20px;
+    }
+    .text {
+        padding: 20px;
+    }
+    a {
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    text-align: center;
+    line-height: 100px;
+    clear: both;
+    margin-top: 20px;
+    .about {
+        @include font-style(8px);
+        margin: 0 1%;
+        text-align: center;
+    }
+}
+
+/* Navigation
+----------------------------------------------------------------------------------------------------*/
+nav {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.submenu {
+    text-align: center;
+    background: rgba(215, 215, 215, 0.60);
+}
+
+.text > .submenu {
+    margin: 10px -20px;
+}
+
+nav, .submenu {
+    ul {
+        list-style: none;
+        width: 100%;
+        li {
+            display: inline-block;
+            max-width: 128px;
+            text-align: center;
+            a {
+                @include font-style;
+                display: block;
+                padding: 30px 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.submenu ul li a {
+    @include font-style;
+    padding: 10px;
+}
+
+#menuButton {
+    @include font-style;
+    display: none;
+    padding: 10px;
+
+}
+
+/* Custom sizes
+============================================================================================== */
+
+@media (max-width: 1024px) {
+    #wew, #deploy {
+        .images {
+            float: none;
+            text-align: center;
+            margin: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #wew, #deploy {
+        width: $max-width;
+        margin: 0 10%;
+    }
+
+    #github {
+        @include single-box-shadow($grey, 5px, 0px, 0px, 0px, inset)
+    }
+
+    #sass {
+        @include single-box-shadow($cyan, -5px, 5px, 0px, 0px, inset)
+    }
+
+    #contact {
+        @include single-box-shadow($grey, 5px, 0px, 0px, 0px, inset)
+    }
+
+    #contact {
+        .text,
+        h3,
+        h2 {
+            font-size: 13px;
+        }
+    }
+
+    #wew, #deploy {
+        .images {
+            float: left;
+            text-align: left;
+            margin: 20px;
+        }
+    }
+
+    #rwd .images img {
+        height: auto;
+        width: 200px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+        padding: 30px 8px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1.0em;
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+    }
+
+    .container {
+        min-width: 0;
+    }
+
+    #menuButton {
+        display: block;
+    }
+
+    header,
+    footer,
+    #contact,
+    #deploy,
+    #github,
+    #sass,
+    #home,
+    #rwd,
+    #wew {
+        width: auto !important;
+        float: none;
+        margin: 0 1%;
+    }
+
+    #deploy,
+    #github,
+    #sass,
+    #home,
+    #rwd,
+    #wew {
+        .images {
+            padding: 10px 0px 0;;
+            margin: 0;
+            float: none;
+            text-align: center;
+        }
+        .text {
+            margin-top: 0;
+        }
+    }
+
+    #home {
+        border-top: 5px solid $cyan;
+    }
+
+    #rwd {
+        text-align: center;
+        .images {
+            display: inline-block;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .text {
+            text-align: left;
+            padding-top: 30px;
+        }
+    }
+
+    nav {
+        display: block;
+        ul {
+            display: none;
+            li {
+                display: list-item;
+                width: 100%;
+                max-width: 480px;
+                a {
+                    font-size: 11px;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) {
+    nav ul {
+        display: block !important;
+    }
+}
+
+//@import "mediaqueries";

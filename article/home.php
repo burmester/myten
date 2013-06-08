@@ -8,14 +8,14 @@
  */
 ?>
 <article class="white" id="home">
-    <div class="images">
+    <div class="images sprite64">
         <div>
-            <img src="/images/64x64/facebook.png" alt=""/>
-            <img src="/images/64x64/twitter.png" alt=""/>
+            <span class="icon-facebook"></span>
+            <span class="icon-twitter"></span>
         </div>
         <div>
-            <img src="/images/64x64/rss.png" alt=""/>
-            <img src="/images/64x64/youtube.png" alt=""/>
+            <span class="icon-rss"></span>
+            <span class="icon-youtube"></span>
         </div>
     </div>
     <div class="text">
@@ -40,7 +40,7 @@
 
         <div class="submenu">
             <ul>
-                <li><a href="/johanburmester/index.htm" class="aquahover">first</a></li><li>
+                <li><a href="/johanburmester/index.htm" class="cyanhover">first</a></li><li>
                 <a href="/johanburmester/spotlight/index.php" class="purplehover">second</a></li><li>
                 <a href="/exol/index.php" class="greyhover">third</a></li><li>
             </ul>
